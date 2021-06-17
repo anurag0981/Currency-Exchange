@@ -1,0 +1,81 @@
+/*for creating space between menu nd header*/
+.s1{
+    margin-top: 5px;
+    
+}
+
+/*for creating space between menu nd banner*/
+.s2{
+    margin-top: -15px;
+    
+}
+
+/*for creating space between banner nd couresel*/
+.s3{
+    margin-top: 5px;
+    
+}
+/*for creating space between couresel nd content*/
+.s4{
+    margin-top: 5px;
+    
+}
+
+/*for creating space between content nd footer*/
+.s5{
+    margin-top: 5px;
+    
+}
+
+/*for creating hover on image*/
+.cont {
+    position: relative;
+    width: inherit;
+}
+.image {
+  opacity: 10;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.cont:hover .image {
+  opacity: 0.3;
+}
+
+.cont:hover .middle {
+  opacity: 1;
+}
+
+.m{
+margin-top:2px;
+}
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/*for paper gaps in years page...*/
+.p1{
+    margin-top: 2px;
+}
+/*for footer background*/
+.f1{
+    background-color: black;
+    backface-visibility: visible;
+    color: white;
+}

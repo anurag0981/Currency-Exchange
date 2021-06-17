@@ -1,0 +1,132 @@
+{
+    "USD": {
+        "INR": [
+            {
+                "CompanyName": "Orient",
+                "CurrentRate": "74.1933",
+                "CompanyRate": "74.2124",
+                "Ratings": 3
+            },
+            {
+                "CompanyName": "Forex-Pool",
+                "CurrentRate": "74.1933",
+                "CompanyRate": "75.2345",
+                "Ratings": 5
+            },
+            {
+                "CompanyName": "onada",
+                "CurrentRate": "74.1933",
+                "CompanyRate": "74.2623",
+                "Ratings": 4
+            },
+            {
+                "CompanyName": "Sentra",
+                "CurrentRate": "74.1933",
+                "CompanyRate": "76.2132",
+                "Ratings": 5
+            },
+            {
+                "CompanyName": "HRX",
+                "CurrentRate": "74.1933",
+                "CompanyRate": "75.1923",
+                "Ratings": 4
+            }
+        ],
+        "GBP": [
+            {
+                "CompanyName": "Orient",
+                "CurrentRate": "0.750509",
+                "CompanyRate": "0.76123",
+                "Ratings": 3
+            },
+            {
+                "CompanyName": "Forex-Pool",
+                "CurrentRate": "0.750509",
+                "CompanyRate": "0.745296",
+                "Ratings": 4
+            },
+            {
+                "CompanyName": "onada",
+                "CurrentRate": "0.750509",
+                "CompanyRate": "0.770502",
+                "Ratings": 5
+            },
+            {
+                "CompanyName": "Sentra",
+                "CurrentRate": "0.750509",
+                "CompanyRate": "0.761212",
+                "Ratings": 3
+            },
+            {
+                "CompanyName": "HRX",
+                "CurrentRate": "0.750509",
+                "CompanyRate": "0.781314",
+                "Ratings": 5
+            }
+        ],
+        "EUR": [
+            {
+                "CompanyName": "Orient",
+                "CurrentRate": "0.845734",
+                "CompanyRate": "0.855342",
+                "Ratings": 4
+            },
+            {
+                "CompanyName": "Forex-Pool",
+                "CurrentRate": "0.845734",
+                "CompanyRate": "0.862614",
+                "Ratings": 3
+            },
+            {
+                "CompanyName": "onada",
+                "CurrentRate": "0.845734",
+                "CompanyRate": "0.851623",
+                "Ratings": 5
+            },
+            {
+                "CompanyName": "Sentra",
+                "CurrentRate": "0.845734",
+                "CompanyRate": "0.885724",
+                "Ratings": 5
+            },
+            {
+                "CompanyName": "HRX",
+                "CurrentRate": "0.845734",
+                "CompanyRate": "0.856243",
+                "Ratings": 1
+            }
+        ],
+        "JPY": [
+            {
+                "CompanyName": "Orient",
+                "CurrentRate": "104.264",
+                "CompanyRate": "103.125",
+                "Ratings": 3
+            },
+            {
+                "CompanyName": "Forex-Pool",
+                "CurrentRate": "104.264",
+                "CompanyRate": "105.362",
+                "Ratings": 4
+            },
+            {
+                "CompanyName": "onada",
+                "CurrentRate": "104.264",
+                "CompanyRate": "106.182",
+                "Ratings": 2
+            },
+            {
+                "CompanyName": "Sentra",
+                "CurrentRate": "104.264",
+                "CompanyRate": "101.111",
+                "Ratings": 1
+            },
+            {
+                "CompanyName": "HRX",
+                "CurrentRate": "104.264",
+                "CompanyRate": "107.327",
+                "Ratings": 5
+            }
+        ]
+    }
+}

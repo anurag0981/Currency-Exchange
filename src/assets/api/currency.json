@@ -1,0 +1,44 @@
+{
+    "Currency": [
+        {
+            "Id": 1,
+            "Name": "INR"
+        },
+        {
+            "Id": 2,
+            "Name": "USD"
+        },
+        {
+            "Id": 3,
+            "Name": "EUR"
+        },
+        {
+            "Id": 4,
+            "Name": "GBP"
+        },
+        {
+            "Id": 5,
+            "Name": "AUD"
+        },
+        {
+            "Id": 6,
+            "Name": "CAD"
+        },
+        {
+            "Id": 7,
+            "Name": "CHF"
+        },
+        {
+            "Id": 8,
+            "Name": "RUB"
+        },
+        {
+            "Id": 9,
+            "Name": "PKR"
+        },
+        {
+            "Id": 10,
+            "Name": "JPY"
+        }
+    ]
+}

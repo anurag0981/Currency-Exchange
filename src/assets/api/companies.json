@@ -1,0 +1,238 @@
+{
+    "Companies": [
+        {
+            "CompanyInfo": {
+                "Id": 1,
+                "Name": "Orient"
+            },
+            "Rates": [
+                {
+                    "Id": 1,
+                    "FromCurrency": 1,
+                    "ToCurrency": 2,
+                    "Rate": 45
+                },
+                {
+                    "Id": 2,
+                    "FromCurrency": 1,
+                    "ToCurrency": 3,
+                    "Rate": 45
+                },
+                {
+                    "Id": 3,
+                    "RateId": 3,
+                    "Rate": 45
+                },
+                {
+                    "Id": 4,
+                    "RateId": 4,
+                    "Rate": 45
+                },
+                {
+                    "Id": 5,
+                    "RateId": 5,
+                    "Rate": 45
+                },
+                {
+                    "Id": 6,
+                    "RateId": 6,
+                    "Rate": 45
+                },
+                {
+                    "Id": 7,
+                    "RateId": 7,
+                    "Rate": 45
+                },
+                {
+                    "Id": 8,
+                    "RateId": 8,
+                    "Rate": 45
+                },
+                {
+                    "Id": 9,
+                    "RateId": 9,
+                    "Rate": 45
+                },
+                {
+                    "Id": 10,
+                    "RateId": 10,
+                    "Rate": 45
+                }
+            ]
+        },
+        {
+            "CompanyInfo": {
+                "Id": 2,
+                "Name": "Forex-pool"
+            },
+            "Rates": [
+                {
+                    "Id": 1,
+                    "RateId": 1,
+                    "Rate": 45
+                },
+                {
+                    "Id": 2,
+                    "RateId": 2,
+                    "Rate": 45
+                },
+                {
+                    "Id": 3,
+                    "RateId": 3,
+                    "Rate": 45
+                },
+                {
+                    "Id": 4,
+                    "RateId": 4,
+                    "Rate": 45
+                },
+                {
+                    "Id": 5,
+                    "RateId": 5,
+                    "Rate": 45
+                },
+                {
+                    "Id": 6,
+                    "RateId": 6,
+                    "Rate": 45
+                },
+                {
+                    "Id": 7,
+                    "RateId": 7,
+                    "Rate": 45
+                },
+                {
+                    "Id": 8,
+                    "RateId": 8,
+                    "Rate": 45
+                },
+                {
+                    "Id": 9,
+                    "RateId": 9,
+                    "Rate": 45
+                },
+                {
+                    "Id": 10,
+                    "RateId": 10,
+                    "Rate": 45
+                }
+            ]
+        },
+        {
+            "CompanyInfo": {
+                "Id": 3,
+                "Name": "V!"
+            },
+            "Rates": [
+                {
+                    "Id": 1,
+                    "RateId": 1,
+                    "Rate": 45
+                },
+                {
+                    "Id": 2,
+                    "RateId": 2,
+                    "Rate": 45
+                },
+                {
+                    "Id": 3,
+                    "RateId": 3,
+                    "Rate": 45
+                },
+                {
+                    "Id": 4,
+                    "RateId": 4,
+                    "Rate": 45
+                },
+                {
+                    "Id": 5,
+                    "RateId": 5,
+                    "Rate": 45
+                },
+                {
+                    "Id": 6,
+                    "RateId": 6,
+                    "Rate": 45
+                },
+                {
+                    "Id": 7,
+                    "RateId": 7,
+                    "Rate": 45
+                },
+                {
+                    "Id": 8,
+                    "RateId": 8,
+                    "Rate": 45
+                },
+                {
+                    "Id": 9,
+                    "RateId": 9,
+                    "Rate": 45
+                },
+                {
+                    "Id": 10,
+                    "RateId": 10,
+                    "Rate": 45
+                }
+            ]
+        },
+        {
+            "CompanyInfo": {
+                "Id": 4,
+                "Name": "HRX"
+            },
+            "Rates": [
+                {
+                    "Id": 1,
+                    "RateId": 1,
+                    "Rate": 45
+                },
+                {
+                    "Id": 2,
+                    "RateId": 2,
+                    "Rate": 45
+                },
+                {
+                    "Id": 3,
+                    "RateId": 3,
+                    "Rate": 45
+                },
+                {
+                    "Id": 4,
+                    "RateId": 4,
+                    "Rate": 45
+                },
+                {
+                    "Id": 5,
+                    "RateId": 5,
+                    "Rate": 45
+                },
+                {
+                    "Id": 6,
+                    "RateId": 6,
+                    "Rate": 45
+                },
+                {
+                    "Id": 7,
+                    "RateId": 7,
+                    "Rate": 45
+                },
+                {
+                    "Id": 8,
+                    "RateId": 8,
+                    "Rate": 45
+                },
+                {
+                    "Id": 9,
+                    "RateId": 9,
+                    "Rate": 45
+                },
+                {
+                    "Id": 10,
+                    "RateId": 10,
+                    "Rate": 45
+                }
+            ]
+        }
+    ]
+}

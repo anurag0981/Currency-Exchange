@@ -1,0 +1,22 @@
+[
+    {
+        "CompanyName": "orient",
+        "INR": "0.0101612 GBP",
+        "rating": 3.6
+    },
+    {
+        "CompanyName": "Forex-Pool",
+        "USD": "74.1567 INR",
+        "rating": 4.3
+    },
+    {
+        "CompanyName": "V!",
+        "EUR": "87.9545 INR",
+        "rating": 3.3
+    },
+    {
+        "CompanyName": "HRX",
+        "GBP": "98.4210 INR",
+        "rating": 2.7
+    }
+]

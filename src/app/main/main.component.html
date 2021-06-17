@@ -1,0 +1,207 @@
+<div class="container">
+
+    <!--------------------------navigation bar------------------------------------->
+    <div class="s1">
+        <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: #ffde00;">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#" style="color: #000000;"><b>Forex-Pool</b></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-top: 15px; margin-right: 2px;">
+                    <li style="color: #000000;"><b>
+                            <p id="navtime"></p>
+                        </b></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--------------------------navigation bar end--------------------------------->
+
+    <!--------------------------banner--------------------------------------->
+    <div class="row s2">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 "> <img src="../../assets/images/banner/b1.png"
+                alt="cryptocurrency" width="100%" style="filter: blur(1px);"></div>
+    </div>
+    <!--------------------------banner end----------------------------------->
+
+    <!--------------------------content----------------------------------->
+    <div class="row s4">
+        <!------content left-------->
+        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12 ">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color: #ffde00;">
+                    <b style="font-size:large;">About Us</b>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav navbar-btn">
+                        <p>Here we are implementing a foreign exchange aggregator that interfaces with multiple forex
+                            providers to provide the user with the current rates that are available in the market.
+                        </p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!------content mid-------->
+        <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 ">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color: #ffde00;">
+                    <b style="font-size:large;">Convert Now</b>
+                </div>
+                <div class="panel-body text-center">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-sm-12">
+                                <label class="control-label col-sm-2" for="from" style="color: black;">From:</label>
+                                <!---------- Country1--------------->
+                                <!-- <select class="form-control" id="from" name="from">
+                                   
+                                </select> -->
+                                <select (change)="onChangeFromCurrency($event)" class="form-control" id="country1"
+                                    name="country1">
+                                    <option value="first">Select Currency</option>
+                                    <option value="USD">USD</option>
+                                    <option value="INR">INR</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="JPY">JPY</option>
+                                    <option value="AUD">AUD</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-sm-12">
+                                <label class="control-label col-sm-2 " for="country2" style="color: black;">To:</label>
+                                <!---------- country2--------------->
+                                <select (change)="onChangeToCurrency($event)" class="form-control" id="country1"
+                                    name="country1">
+                                    <option value="first">Select Currency</option>
+                                    <option value="USD">USD</option>
+                                    <option value="INR">INR</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="JPY">JPY</option>
+                                    <option value="SGD">SGD</option>
+                                </select>
+
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-sm-12">
+                                <button [disabled]="fromcurrency == tocurrency" type="button" class="btn"
+                                    style="background-color: #ffde00; margin-top: 20px;" name="Convert" id="Convert"
+                                    (click)="getExchange()">Convert</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!------content right-------->
+        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color: #ffde00;">
+                    <b style="font-size:large;">Team (Husain Rounak)</b>
+                </div>
+                <div class="panel-body">
+                    <details class="nav navbar-btn">
+                        <summary class="alert-info"><strong>Anurag Upadhyay</strong></summary>
+                        <p>anuragupadhyay4u2@gmail.com</p>
+                    </details>
+                    <details class="nav navbar-btn">
+                        <summary class="alert-info"><strong>Piyush Singal</strong></summary>
+                        <p>shinghal.piyush999@gmail.com</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------content box end----------------------------------->
+
+    <!---------------------------result panel----------------------->
+    <div class="row s4">
+        <!------result content left(Companies Rate's)-------->
+        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 ">
+            <div class="panel panel-default" id="panel1">
+                <div class="panel-heading" style="background-color: #ffde00;">
+                    <b style="font-size:large;">Companies Name and Rates</b>
+                </div>
+
+                <div class="panel-body">
+                    <table class="table table-hover table-responsive">
+                        <tbody>
+                            <tr *ngFor="let item of ForexData ">
+                                <td>{{item.CompanyName}}</td>
+                                <td>{{item.CompanyRate}}</td>
+                            </tr>
+                            <tr *ngIf="ForexData.length == 0">
+                                No data.
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!------content mid(Current Rates)-------->
+        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 ">
+            <div class="panel panel-default" id="panel2">
+                <div class="panel-heading" style="background-color: #ffde00;">
+                    <b style="font-size:large; color: #000000;">Current Rates<span style="margin-left: 100px;"
+                            id="time1"></span></b>
+                </div>
+                <div class="panel-body text-center">
+                    <table class="table table-responsive">
+                        <tbody>
+                            <tr *ngIf="ForexData.length == 0">
+                                No data.
+                            </tr>
+                            <tr *ngIf="ForexData.length>0">
+                                <td>{{fromcurrency}}</td>
+                                <td><span class="glyphicon glyphicon-arrow-right"></span></td>
+                                <td>{{tocurrency}}</td>
+                            </tr>
+                            <tr *ngIf="ForexData.length>0">
+                                <td></td>
+                                <td *ngIf="ForexData.length>0">{{liveRate}}</td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!------content right(Worst/Best Rates)-------->
+        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+            <div class="panel panel-default" id="panel3">
+                <div class="panel-heading" style="background-color: #ffde00;">
+                    <b style="font-size:large;">Best/Worst Rates</b>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-responsive">
+                        <tbody>
+                            <tr class="success">
+                                <td>{{bestCompany}}</td>
+                                <td>{{bestRate}}</td>
+                            </tr>
+                            <tr class="danger">
+                                <td>{{worstCompany}}</td>
+                                <td>{{worstRate}}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------result panel end----------------------->
+
+    <!--------------------------footer--------------------------------------->
+    <div class="row s5">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 ">
+            <footer class="f1" style="text-align: center;">
+                <p>
+                    <small>&copy; 2020-2021 Western Union,Forex Aggregator</small>
+                </p>
+            </footer>
+        </div>
+    </div>
+    <!--------------------------footer end----------------------------------->
+</div>
